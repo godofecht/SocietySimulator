@@ -6,7 +6,7 @@ public class SimulationManager : MonoBehaviour
     public GameObject malePrefab; // Prefab for square (male)
     public GameObject femalePrefab; // Prefab for triangle (female)
     public int initialPopulation = 1; // Number of agents to spawn
-    public Color[] ethnicGroupColors; // Array of colors representing different ethnic groups
+    public Color[] groupColors; // Array of colors representing different groups
 
     void Start()
     {
@@ -17,10 +17,10 @@ public class SimulationManager : MonoBehaviour
             return; // Exit the method to prevent further errors
         }
 
-        // Ensure that ethnicGroupColors array has at least one color
-        if (ethnicGroupColors.Length == 0)
+        // Ensure that groupColors array has at least one color
+        if (groupColors.Length == 0)
         {
-            UnityEngine.Debug.LogError("No ethnic group colors assigned!");
+            UnityEngine.Debug.LogError("No group colors assigned!");
             return; // Exit the method to prevent further errors
         }
 
@@ -34,11 +34,11 @@ public class SimulationManager : MonoBehaviour
             Vector2 randomPosition = new Vector2(UnityEngine.Random.Range(-8f, 8f), UnityEngine.Random.Range(-4f, 4f));
             GameObject agent = Instantiate(agentPrefab, randomPosition, Quaternion.identity);
 
-            // Assign a random ethnic group color to the agent
+            // Assign a random group color to the agent
             Agent agentComponent = agent.GetComponent<Agent>();
             if (agentComponent != null)
             {
-                agentComponent.genome.ethnicGroupColor = ethnicGroupColors[UnityEngine.Random.Range(0, ethnicGroupColors.Length)];
+                agentComponent.genome.groupColor = groupColors[UnityEngine.Random.Range(0, groupColors.Length)];
             }
             else
             {

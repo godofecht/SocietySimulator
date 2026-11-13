@@ -13,13 +13,13 @@ public class Genome
     public float waterDepletionRate;
     public float energyDepletionRate;
     public float restReplenishRate;
-    public Color ethnicGroupColor; // Example of a phenotype
+    public Color groupColor; // Example of a phenotype
 
     // Example phenotype (can be any trait)
     public string phenotype;
 
     public Genome(float health, float moveSpeed, float foodDepletionRate, float waterDepletionRate,
-                  float energyDepletionRate, float restReplenishRate, Color ethnicGroupColor)
+                  float energyDepletionRate, float restReplenishRate, Color groupColor)
     {
         this.health = health;
         this.moveSpeed = moveSpeed;
@@ -27,10 +27,10 @@ public class Genome
         this.waterDepletionRate = waterDepletionRate;
         this.energyDepletionRate = energyDepletionRate;
         this.restReplenishRate = restReplenishRate;
-        this.ethnicGroupColor = ethnicGroupColor;
+        this.groupColor = groupColor;
 
         // Set phenotype based on some genome characteristics (e.g., color, size)
-        this.phenotype = ethnicGroupColor.ToString(); // For simplicity, using color as phenotype here
+        this.phenotype = groupColor.ToString(); // For simplicity, using color as phenotype here
     }
 
     // Example method to splice two genomes together (for offspring)
@@ -44,7 +44,7 @@ public class Genome
             (parent1.waterDepletionRate + parent2.waterDepletionRate) / 2,
             (parent1.energyDepletionRate + parent2.energyDepletionRate) / 2,
             (parent1.restReplenishRate + parent2.restReplenishRate) / 2,
-            Color.Lerp(parent1.ethnicGroupColor, parent2.ethnicGroupColor, 0.5f)
+            Color.Lerp(parent1.groupColor, parent2.groupColor, 0.5f)
         );
     }
 }

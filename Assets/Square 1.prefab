@@ -107,7 +107,7 @@ MonoBehaviour:
     waterDepletionRate: 1
     energyDepletionRate: 1
     restReplenishRate: 1
-    ethnicGroupColor: {r: 0, g: 0, b: 0, a: 0}
+    groupColor: {r: 0, g: 0, b: 0, a: 0}
     phenotype: 
   age: 0
   needsManager:
@@ -141,7 +141,7 @@ MonoBehaviour:
       waterDepletionRate: 0
       energyDepletionRate: 0
       restReplenishRate: 0
-      ethnicGroupColor: {r: 0, g: 0, b: 0, a: 0}
+      groupColor: {r: 0, g: 0, b: 0, a: 0}
       phenotype: 
   relationshipManager:
     knownAgents: []

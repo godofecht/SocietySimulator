@@ -107,7 +107,7 @@ MonoBehaviour:
     waterDepletionRate: 0.8
     energyDepletionRate: 1.1
     restReplenishRate: 1
-    ethnicGroupColor: {r: 0, g: 0, b: 0, a: 0}
+    groupColor: {r: 0, g: 0, b: 0, a: 0}
     phenotype: 
   age: 0
   targetPosition: {x: 0, y: 0, z: 0}

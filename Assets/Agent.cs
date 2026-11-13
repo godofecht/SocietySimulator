@@ -62,7 +62,7 @@ public class Agent : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
         {
-            originalColor = genome.ethnicGroupColor;
+            originalColor = genome.groupColor;
             spriteRenderer.color = originalColor;
             restingColor = originalColor * 0.85f;
         }

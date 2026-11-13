@@ -303,7 +303,7 @@ MonoBehaviour:
   malePrefab: {fileID: 2233079992398674355, guid: 04b3b0641fd96e644b948dd8ddac7f56, type: 3}
   femalePrefab: {fileID: 8440766991828292134, guid: 7b5e3ef5811348546acda09d36374bc0, type: 3}
   initialPopulation: 50
-  ethnicGroupColors:
+  groupColors:
   - {r: 0.5294118, g: 0.41566837, b: 0.17254901, a: 1}
   - {r: 0.3257214, g: 0.5294118, b: 0.17254901, a: 1}
   moveSpeed: 4
