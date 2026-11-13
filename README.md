@@ -66,7 +66,7 @@ Every frame, each agent does two things:
 
 ## Ideas to try
 
-1. Select **SimulationController** in the scene and change **Initial Population** in the Inspector. Add a third colour to **Ethnic Group Colors**.
+1. Select **SimulationController** in the scene and change **Initial Population** in the Inspector. Add a third colour to **Group Colors**.
 2. In `Assets/AgentStates.cs`, change the hunger and thirst threshold of `30f` and see how the crowd around the sources changes.
 3. Make the food run out. In the scene, lower **Resource Amount** on a Food object. `Assets/FoodSource.cs` removes a source when it is empty.
 4. Switch on death and rest. `Assets/Agent.cs` has a `CheckHealthAndRest` method that is never called. Call it from `Update` and watch agents that cannot reach food disappear. Count the survivors over time.
